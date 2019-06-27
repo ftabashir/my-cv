@@ -22,11 +22,15 @@
 }
 
 .ChronoBox-box-item{
-    margin-top: 10px;
+    padding: 10px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.ChronoBox-box-item > *{
+    text-align: start;
 }
 
 .ChronoBox-rhombus{
