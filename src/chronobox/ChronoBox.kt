@@ -19,14 +19,16 @@ fun RBuilder.chrono_box(box: Box) {
                 + box.title
             }
             box.items.map{
-                span{
-                    + it.header
-                }
-                span{
-                    + it.content
-                }
-                span{
-                    + it.footer
+                div("ChronoBox-box-item"){
+                    div{
+                        + it.header
+                    }
+                    div{
+                        + it.content
+                    }
+                    div{
+                        + it.footer
+                    }
                 }
             }
         }

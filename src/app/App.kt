@@ -12,6 +12,11 @@ val box = Box(
             "M.S.  Artificial Intelligence",
             "Shiraz University, Shiraz, Iran.",
             "2015-2018"
+        ),
+        BoxItem(
+            "B.S. Computer Science & Engineering ",
+            "Shiraz University, Shiraz, Iran.",
+            "2010-2015"
         )
     )
 )
