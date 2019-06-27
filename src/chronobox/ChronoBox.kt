@@ -6,15 +6,24 @@ import react.dom.*
 @JsModule("src/chronobox/rhombus.svg")
 external val rhombus: dynamic
 
-fun RBuilder.chrono_box(box: Box) {
+fun RBuilder.chrono_box(box: Box, topEmptySpace: Int = 0) {
     div("ChronoBox"){
         div("ChronoBox-col1"){
+            if(topEmptySpace > 0)
+                div("ChronoBox-line"){
+                    attrs.jsStyle.height = topEmptySpace
+                    attrs.jsStyle.flexGrow = 0
+                }
             div{
                 img(alt = "rhombus", src = rhombus, classes = "ChronoBox-rhombus") {}
             }
             div("ChronoBox-line"){}
         }
         div("ChronoBox-col2"){
+            if(topEmptySpace > 0)
+                div{
+                    attrs.jsStyle.height = topEmptySpace
+                }
             span{
                 + box.title
             }

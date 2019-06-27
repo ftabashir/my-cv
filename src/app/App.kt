@@ -23,7 +23,7 @@ val box = Box(
 
 class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
-        chrono_box(box)
+        chrono_box(box, topEmptySpace=100)
         div("App-header") {
             
             h2 {
