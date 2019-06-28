@@ -64,9 +64,19 @@ val subtitle = "Software Developer"
 class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         header(firstname, lastname, subtitle, avatar)
-        boxes.mapIndexed{ index, box ->
-            val topEmptySpace = if(index==0) 100 else 0
-            chrono_box(box, topEmptySpace)
+        div("App-columns"){
+            div{
+                boxes.mapIndexed{ index, box ->
+                    val topEmptySpace = if(index==0) 100 else 0
+                    chrono_box(box, topEmptySpace)
+                }
+            }
+            div{
+                boxes.mapIndexed{ index, box ->
+                    val topEmptySpace = if(index==0) 100 else 0
+                    chrono_box(box, topEmptySpace)
+                }
+            }
         }
         div("App-header") {
             
