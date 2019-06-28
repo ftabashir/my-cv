@@ -66,13 +66,13 @@ class App : RComponent<RProps, RState>() {
             div{
                 boxes.mapIndexed{ index, box ->
                     val topEmptySpace = if(index==0) 100 else 0
-                    chrono_box(box, topEmptySpace)
+                    box(box, topEmptySpace)
                 }
             }
             div{
                 boxes.mapIndexed{ index, box ->
                     val topEmptySpace = if(index==0) 100 else 0
-                    chrono_box(box, topEmptySpace)
+                    box(box, topEmptySpace)
                 }
             }
         }

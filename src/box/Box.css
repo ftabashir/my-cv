@@ -1,27 +1,27 @@
-.ChronoBox{
+.Box{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-.ChronoBox-col1{
+.Box-col1{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.ChronoBox-col2{
+.Box-col2{
     flex-grow: 1;
 
     display: flex;
     flex-direction: column;
 }
 
-.ChronoBox-col2 > * {
+.Box-col2 > * {
     align-self: flex-start;
 }
 
-.ChronoBox-box-item{
+.Box-box-item{
     padding: 10px;
 
     display: flex;
@@ -29,15 +29,15 @@
     align-items: flex-start;
 }
 
-.ChronoBox-box-item > *{
+.Box-box-item > *{
     text-align: start;
 }
 
-.ChronoBox-rhombus{
+.Box-rhombus{
     width: 20px;
 }
 
-.ChronoBox-line{
+.Box-line{
     background: #1b75bb;
     width: 1px;
     align-self: center;

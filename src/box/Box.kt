@@ -3,23 +3,23 @@ package app
 import react.*
 import react.dom.*
 
-@JsModule("src/chronobox/rhombus.svg")
+@JsModule("src/box/rhombus.svg")
 external val rhombus: dynamic
 
-fun RBuilder.chrono_box(box: Box, topEmptySpace: Int = 0) {
-    div("ChronoBox"){
-        div("ChronoBox-col1"){
+fun RBuilder.box(box: Box, topEmptySpace: Int = 0) {
+    div("Box"){
+        div("Box-col1"){
             if(topEmptySpace > 0)
-                div("ChronoBox-line"){
+                div("Box-line"){
                     attrs.jsStyle.height = topEmptySpace
                     attrs.jsStyle.flexGrow = 0
                 }
             div{
-                img(alt = "rhombus", src = rhombus, classes = "ChronoBox-rhombus") {}
+                img(alt = "rhombus", src = rhombus, classes = "Box-rhombus") {}
             }
-            div("ChronoBox-line"){}
+            div("Box-line"){}
         }
-        div("ChronoBox-col2"){
+        div("Box-col2"){
             if(topEmptySpace > 0)
                 div{
                     attrs.jsStyle.height = topEmptySpace
@@ -28,7 +28,7 @@ fun RBuilder.chrono_box(box: Box, topEmptySpace: Int = 0) {
                 + box.title
             }
             box.items.map{
-                div("ChronoBox-box-item"){
+                div("Box-box-item"){
                     div{
                         + it.header
                     }
