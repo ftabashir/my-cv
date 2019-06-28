@@ -76,6 +76,7 @@ class App : RComponent<RProps, RState>() {
                 }
             }
         }
+        footer()
     }
 }
 
