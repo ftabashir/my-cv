@@ -54,8 +54,16 @@ val boxes = arrayOf(
     )
 )
 
+@JsModule("src/header/avatar.png")
+external val avatar: dynamic
+
+val firstname = "Farzad"
+val lastname = "Tabashir"
+val subtitle = "Software Developer"
+
 class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
+        header(firstname, lastname, subtitle, avatar)
         boxes.mapIndexed{ index, box ->
             val topEmptySpace = if(index==0) 100 else 0
             chrono_box(box, topEmptySpace)
