@@ -6,7 +6,7 @@ import react.dom.*
 @JsModule("src/box/rhombus.svg")
 external val rhombus: dynamic
 
-fun RBuilder.box(box: Box, topEmptySpace: Int = 0) {
+fun RBuilder.box(title: String, topEmptySpace: Int = 0, body: RDOMBuilder<*>.() -> Unit) =
     div("Box"){
         div("Box-col1"){
             if(topEmptySpace > 0)
@@ -25,32 +25,8 @@ fun RBuilder.box(box: Box, topEmptySpace: Int = 0) {
                     attrs.jsStyle.height = topEmptySpace
                 }
             span{
-                + box.title
+                + title
             }
-            box.items.map{
-                div("Box-box-item"){
-                    div{
-                        + it.header
-                    }
-                    div{
-                        + it.content
-                    }
-                    div{
-                        + it.footer
-                    }
-                }
-            }
+            div("Box-body", body)
         }
     }
-}
-
-data class Box(
-    val title: String,
-    val items: Array<BoxItem>
-)
-
-data class BoxItem(
-    val header: String,
-    val content: String,
-    val footer: String
-)
