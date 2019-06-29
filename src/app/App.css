@@ -6,12 +6,13 @@ body {
   display: flex;
 }
 
-.App-columns > :first-child{
-  flex: 1 1 auto
+.App-column{
+  display: flex;
+  flex-direction: column;
 }
 
-.App-columns > :last-child{
-  flex: 1 1 100%
+.App-column > :last-child{
+  flex-grow: 1;
 }
 
 .SocialMedia{

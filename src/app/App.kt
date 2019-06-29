@@ -22,7 +22,7 @@ class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         header(firstname, lastname, subtitle, avatar)
         div("App-columns"){
-            div{
+            div("App-column"){
                 box(person.educations.name, topEmptySpace = 100){
                     person.educations.items.map{ education ->
                         education_box(education)
@@ -39,7 +39,7 @@ class App : RComponent<RProps, RState>() {
                     }
                 }
             }
-            div{
+            div("App-column"){
                 box(person.talks.name, topEmptySpace = 100){
                     person.talks.items.map{ (talkTitle, talkDesceiption) ->
                         simple_box(talkTitle, talkDesceiption)
