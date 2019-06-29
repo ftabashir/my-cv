@@ -1,4 +1,12 @@
 .Footer{
     height: 40px;
-    background: #1b75bb
+    background: #1b75bb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Love{
+    margin: 0 10px;
 }
