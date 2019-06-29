@@ -6,10 +6,10 @@ body {
   display: flex;
 }
 
-.App-columns :first-child{
+.App-columns > :first-child{
   flex: 1 1 auto
 }
 
-.App-columns :last-child{
+.App-columns > :last-child{
   flex: 1 1 100%
 }

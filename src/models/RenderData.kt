@@ -82,5 +82,29 @@ val person = Person(
                 "Fall & Spring 2016"
             )
         )
+    ),
+    Group(
+        "Talks",
+        arrayOf(
+            "Reactive Programming with RxJava" to "an introduction and detailed talk (in persian language) at the 5th session of Logcat android developers group"
+        )
+    ),
+    Group(
+        "Courses",
+        arrayOf(
+            "Introduction to Kotlin Programming" to "By Hadi Hariri",
+            "Advanced Kotlin Programming" to "By Hadi Hariri"
+        )
+    ),
+    Group(
+        "Skills",
+        arrayOf(
+            "Git & Git Flow",
+            "OOP & Design Patterns",
+            "Software Design & Analysis",
+            "Familiar with ASP.NET",
+            "Experienced in Kotlin and Java",
+            "Experienced in ReactiveX (RxJava & RxJS)"
+        )
     )
 )

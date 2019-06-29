@@ -32,6 +32,23 @@ class App : RComponent<RProps, RState>() {
                     }
                 }
             }
+            div{
+                box(person.talks.name, topEmptySpace = 100){
+                    person.talks.items.map{ (talkTitle, talkDesceiption) ->
+                        simple_box(talkTitle, talkDesceiption)
+                    }
+                }
+                box(person.courses.name){
+                    person.courses.items.map{ (courseTitle, courseDescription)  ->
+                        simple_box(courseTitle, courseDescription)
+                    }
+                }
+                box(person.skills.name){
+                    person.skills.items.map{ skill  ->
+                        simple_box(skill)
+                    }
+                }
+            }
         }
         footer()
     }
