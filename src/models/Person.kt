@@ -8,5 +8,6 @@ data class Person(
     val teachingAssistantships: Group<Education>,
     val talks: Group<Pair<String, String>>,
     val courses: Group<Pair<String, String>>,
-    val skills: Group<String>
+    val skills: Group<String>,
+    val socialMedia: SocialMedia
 )

@@ -106,5 +106,11 @@ val person = Person(
             "Experienced in Kotlin and Java",
             "Experienced in ReactiveX (RxJava & RxJS)"
         )
+    ),
+    SocialMedia(
+        "users/2700239/fartab",
+        "ftabashir",
+        "in/farzad-tabashir",
+        "ftabashir"
     )
 )

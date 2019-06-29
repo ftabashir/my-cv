@@ -13,3 +13,17 @@ body {
 .App-columns > :last-child{
   flex: 1 1 100%
 }
+
+.SocialMedia{
+  display: flex;
+  align-items: center;
+}
+
+.SocialMedia > img{
+  width: 24px;
+  height: 24px;
+}
+
+.SocialMedia > a {
+  padding-left: 10px;
+}
